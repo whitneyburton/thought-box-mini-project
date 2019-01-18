@@ -31,13 +31,15 @@ class ThoughtCard extends Component {
         <p
           className='body'
           contentEditable={contenteditable}>{body}</p>
-        <button
-          id={id}
-          onClick={deleteThought}
-          className='delete-button'>Delete</button>
-        <button
-          onClick={this.editThought}
-          className='edit-button'>{editOrSave}</button>
+        <div className='buttons'>
+          <button
+            id={id}
+            onClick={deleteThought}
+            className='delete-button'>Delete</button>
+          <button
+            onClick={this.editThought}
+            className='edit-button'>{editOrSave}</button>
+        </div>
       </div>
     )
   }

@@ -1,0 +1,26 @@
+.CreateThought {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  /* background-image: url("./thought-bubble.jpg");
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+.title-input,
+.body-input, 
+.create-thought-button {
+  width: 70%;
+  margin: 5px auto;
+  border-radius: 3px;
+}
+
+.inputs {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.create-thought-button {
+  width: 20%;
+  padding: 5px;
+}

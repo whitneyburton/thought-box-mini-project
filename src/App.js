@@ -26,19 +26,17 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div className="header">
-          <h2>ThoughtBox</h2>
+      <div className='App'>
+        <div className='header'>
+          <h2 className='thoughtbox-title'>thoughtbox</h2>
         </div>
         <CreateThought
           createThought={this.createThought} />
-        <div>
           <ThoughtList
             thoughtList={this.state.thoughts}
             deleteThought={this.deleteThought}
             editThought={this.editThought}
           />
-        </div>
       </div>
     );
   }

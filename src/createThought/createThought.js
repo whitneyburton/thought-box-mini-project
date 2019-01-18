@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import './createThought.css';
+
 
 class CreateThought extends Component {
   constructor() {
@@ -22,18 +24,21 @@ class CreateThought extends Component {
 
   render() {
     return(
-      <form>
+      <form className='CreateThought'>
         <input
           name='title'
+          className='title-input inputs'
           value={this.state.title}
           onChange={this.handleChange}
-          placeholder='Thought Title'></input>
+          placeholder='Idea'></input>
         <input
           name='body'
+          className='body-input inputs'
           value={this.state.body}
           onChange={this.handleChange}
-          placeholder='Thought Body'></input>
+          placeholder='Description'></input>
         <button
+          className='create-thought-button'
           onClick={this.handleSubmit}>Create Thought</button>
       </form>
     );

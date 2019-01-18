@@ -1,5 +1,6 @@
 import React from 'react';
 import ThoughtCard from '../thoughtCard/thoughtCard';
+import './thoughtList.css';
 
 export const ThoughtList = (props) => {
   const { thoughtList, deleteThought, editThought } = props;

@@ -1,5 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  padding-top: 25px;
+  /* background-image: url("./thought-bubble.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 620px 228px; */
+
+}
+
+.thoughtbox-title {
+  color: #1b446c;
+  letter-spacing: 6px;
+  font-size: 50px;
+
 }
