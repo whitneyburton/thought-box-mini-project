@@ -35,7 +35,7 @@ ShallowWrapper {
           />
         </div>,
       ],
-      "className": "app",
+      "className": "App",
     },
     "ref": null,
     "rendered": Array [
@@ -91,6 +91,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "deleteThought": [Function],
+            "editThought": undefined,
             "thoughtList": Array [],
           },
           "ref": null,
@@ -126,7 +127,7 @@ ShallowWrapper {
             />
           </div>,
         ],
-        "className": "app",
+        "className": "App",
       },
       "ref": null,
       "rendered": Array [
@@ -182,6 +183,7 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "deleteThought": [Function],
+              "editThought": undefined,
               "thoughtList": Array [],
             },
             "ref": null,

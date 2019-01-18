@@ -24,10 +24,6 @@ class App extends Component {
     this.setState({ thoughts: filteredThoughts });
   }
 
-  editThought = () => {
-    
-  }
-
   render() {
     return (
       <div className="App">

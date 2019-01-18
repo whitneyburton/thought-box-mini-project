@@ -20,14 +20,27 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h3 />,
-        <h4 />,
+        <h3
+          className="title"
+          contentEditable={false}
+        />,
+        <p
+          className="body"
+          contentEditable={false}
+        />,
         <button
           className="delete-button"
         >
           Delete
         </button>,
+        <button
+          className="edit-button"
+          onClick={[Function]}
+        >
+          Edit
+        </button>,
       ],
+      "className": "ThoughtCard",
     },
     "ref": null,
     "rendered": Array [
@@ -37,6 +50,8 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": undefined,
+          "className": "title",
+          "contentEditable": false,
         },
         "ref": null,
         "rendered": null,
@@ -48,10 +63,12 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": undefined,
+          "className": "body",
+          "contentEditable": false,
         },
         "ref": null,
         "rendered": null,
-        "type": "h4",
+        "type": "p",
       },
       Object {
         "instance": null,
@@ -67,6 +84,19 @@ ShallowWrapper {
         "rendered": "Delete",
         "type": "button",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Edit",
+          "className": "edit-button",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Edit",
+        "type": "button",
+      },
     ],
     "type": "div",
   },
@@ -77,14 +107,27 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h3 />,
-          <h4 />,
+          <h3
+            className="title"
+            contentEditable={false}
+          />,
+          <p
+            className="body"
+            contentEditable={false}
+          />,
           <button
             className="delete-button"
           >
             Delete
           </button>,
+          <button
+            className="edit-button"
+            onClick={[Function]}
+          >
+            Edit
+          </button>,
         ],
+        "className": "ThoughtCard",
       },
       "ref": null,
       "rendered": Array [
@@ -94,6 +137,8 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": undefined,
+            "className": "title",
+            "contentEditable": false,
           },
           "ref": null,
           "rendered": null,
@@ -105,10 +150,12 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": undefined,
+            "className": "body",
+            "contentEditable": false,
           },
           "ref": null,
           "rendered": null,
-          "type": "h4",
+          "type": "p",
         },
         Object {
           "instance": null,
@@ -122,6 +169,19 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": "Delete",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Edit",
+            "className": "edit-button",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Edit",
           "type": "button",
         },
       ],
