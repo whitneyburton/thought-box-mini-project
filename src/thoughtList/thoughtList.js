@@ -1,10 +1,19 @@
 import React from 'react';
+import ThoughtCard from '../thoughtCard/thoughtCard';
 
-export const ThoughtList = () => {
-
+export const ThoughtList = (props) => {
+  const { thoughtList, deleteThought, editThought } = props;
   return (
-    <div>
-    ThoughtList
+    <div className="ThoughtList">
+      {
+        thoughtList.map((thought) => {
+          return <ThoughtCard
+            key={thought.id}
+            deleteThought={deleteThought}
+            editThought={editThought}
+            {...thought} />;
+        })
+    }
     </div>
   );
 }
