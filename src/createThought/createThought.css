@@ -2,25 +2,37 @@
   display: flex;
   flex-direction: column;
   width: 85%;
-  /* background-image: url("./thought-bubble.jpg");
-  background-position: center;
-  background-repeat: no-repeat; */
+  background-image: url(/static/media/thought-bubble.8b68e191.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 98% 122%;
+  padding: 55px 0px 90px 0px;
 }
 
 .title-input,
 .body-input, 
 .create-thought-button {
-  width: 70%;
+  width: 60%;
   margin: 5px auto;
   border-radius: 3px;
 }
 
 .inputs {
-  padding: 10px;
+  padding: 4px 6px;
   font-size: 14px;
+  margin-left: 22%;
+}
+
+textarea:focus, .inputs:focus{
+  outline: none;
 }
 
 .create-thought-button {
-  width: 20%;
+  width: 17%;
+  position: absolute;
+  top: 44%;
+  left: 72%;
   padding: 5px;
+  background-color: #1b1b1b;
+  color: #fbf8f8;
 }

@@ -21,5 +21,14 @@
   color: #1b446c;
   letter-spacing: 6px;
   font-size: 50px;
+  padding-bottom: 15px;
 
+}
+
+.buttons {
+
+}
+
+.buttons:hover {
+  cursor: pointer;
 }

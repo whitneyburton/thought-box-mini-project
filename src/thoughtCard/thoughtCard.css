@@ -1,26 +1,29 @@
 .ThoughtCard {
-  background-color: #1b446c;
+  background-color: #0a2a49;
   padding: 10px;
   border-radius: 3px;
   margin-top: 25px;
+  width: 75%;
 }
 
 .title,
 .body {
-  background-color: #1b446c;
+  background-color: transparent;
   color: #fff;
   text-align: center;
   padding: 4px 0px;
+  font-weight: lighter;
 }
 
 .title {
   letter-spacing: 2px;
+  font-size: 24px;
 }
 
-.buttons {
-  background-color: #1b446c;
+.buttons-container {
+  background-color: transparent;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .delete-button, 

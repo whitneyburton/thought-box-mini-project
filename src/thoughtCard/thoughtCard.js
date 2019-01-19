@@ -11,6 +11,7 @@ class ThoughtCard extends Component {
   }
 
   editThought = () => {
+    debugger
     let { contenteditable, editOrSave } = this.state;
     contenteditable = !contenteditable;
     if (editOrSave === 'Edit') {
@@ -31,14 +32,15 @@ class ThoughtCard extends Component {
         <p
           className='body'
           contentEditable={contenteditable}>{body}</p>
-        <div className='buttons'>
+        <div className='buttons-container'>
+        <button
+          id={id}            
+          onClick={this.editThought}
+          className='edit-button buttons'>{editOrSave}</button>
           <button
             id={id}
             onClick={deleteThought}
-            className='delete-button'>Delete</button>
-          <button
-            onClick={this.editThought}
-            className='edit-button'>{editOrSave}</button>
+            className='delete-button buttons'>Delete</button>
         </div>
       </div>
     )

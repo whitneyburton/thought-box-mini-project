@@ -38,8 +38,8 @@ class CreateThought extends Component {
           onChange={this.handleChange}
           placeholder='Description'></input>
         <button
-          className='create-thought-button'
-          onClick={this.handleSubmit}>Create Thought</button>
+          className='create-thought-button buttons'
+          onClick={this.handleSubmit}>CREATE THOUGHT</button>
       </form>
     );
   }

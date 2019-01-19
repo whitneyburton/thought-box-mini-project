@@ -24,6 +24,12 @@ class App extends Component {
     this.setState({ thoughts: filteredThoughts });
   }
 
+  updateEditedCard = (event) => {
+    const id = parseInt(event.target.id);
+    const thoughts = [...this.state.thoughts];
+
+  }
+
   render() {
     return (
       <div className='App'>
