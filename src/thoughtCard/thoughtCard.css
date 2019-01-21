@@ -1,4 +1,6 @@
 .ThoughtCard {
+  display: flex;
+  flex-direction: column;
   background-color: #0a2a49;
   padding: 10px;
   border-radius: 3px;
@@ -30,4 +32,12 @@
 .edit-button {
   padding: 3px 6px;
   border-radius: 3px;
+}
+
+.title-edit-input,
+.body-edit-input {
+  margin: 2vh auto;
+  width: 90%;    
+  padding: 4px 6px;
+  font-size: 12px;
 }

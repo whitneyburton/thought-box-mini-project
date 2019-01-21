@@ -24,10 +24,21 @@ class App extends Component {
     this.setState({ thoughts: filteredThoughts });
   }
 
-  updateEditedCard = (event) => {
-    const id = parseInt(event.target.id);
-    const thoughts = [...this.state.thoughts];
-
+  editThought = (title, body, id) => {
+    const updated = {
+      title: title,
+      body: body,
+      id: id
+    }
+    const allThoughts = [...this.state.thoughts];
+    console.log(allThoughts)
+    const foundIndex = allThoughts.findIndex((thought) => {
+      return thought.id === id
+    });
+    allThoughts.splice(foundIndex, 1, updated);
+    this.setState({
+      thoughts: allThoughts
+    });
   }
 
   render() {
