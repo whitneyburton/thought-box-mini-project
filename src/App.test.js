@@ -1,7 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import App from './App';
-import { ThoughtList } from './thoughtList/thoughtList';
 
 
 it('matches the snapshot', () => {
@@ -10,9 +9,9 @@ it('matches the snapshot', () => {
 });
 
 it('renders a thoughtList with the correct props', () => {
-  const thoughtList = [{}, {}, {}];
-  const wrapper = shallow(<ThoughtList thoughtList={thoughtList} />);
-  // expect(wrapper).toHaveProperty('thoughts');
+  const mockThoughtList = { thoughts: [{}, {}]}
+  const wrapper = shallow(<App thoughtList={mockThoughtList}/>)
+  expect(wrapper.instance().props.thoughtList).toBe(mockThoughtList)
 });
 
 it('initial state is an empty array', () => {

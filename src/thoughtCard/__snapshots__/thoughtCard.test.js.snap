@@ -28,17 +28,21 @@ ShallowWrapper {
           className="body"
           contentEditable={false}
         />,
-        <button
-          className="delete-button"
+        <div
+          className="buttons-container"
         >
-          Delete
-        </button>,
-        <button
-          className="edit-button"
-          onClick={[Function]}
-        >
-          Edit
-        </button>,
+          <button
+            className="edit-button buttons"
+            onClick={[Function]}
+          >
+            Edit
+          </button>
+          <button
+            className="delete-button buttons"
+          >
+            Delete
+          </button>
+        </div>,
       ],
       "className": "ThoughtCard",
     },
@@ -75,27 +79,53 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Delete",
-          "className": "delete-button",
-          "id": undefined,
-          "onClick": undefined,
+          "children": Array [
+            <button
+              className="edit-button buttons"
+              onClick={[Function]}
+            >
+              Edit
+            </button>,
+            <button
+              className="delete-button buttons"
+            >
+              Delete
+            </button>,
+          ],
+          "className": "buttons-container",
         },
         "ref": null,
-        "rendered": "Delete",
-        "type": "button",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Edit",
-          "className": "edit-button",
-          "onClick": [Function],
-        },
-        "ref": null,
-        "rendered": "Edit",
-        "type": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Edit",
+              "className": "edit-button buttons",
+              "id": undefined,
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Edit",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Delete",
+              "className": "delete-button buttons",
+              "id": undefined,
+              "onClick": undefined,
+            },
+            "ref": null,
+            "rendered": "Delete",
+            "type": "button",
+          },
+        ],
+        "type": "div",
       },
     ],
     "type": "div",
@@ -115,17 +145,21 @@ ShallowWrapper {
             className="body"
             contentEditable={false}
           />,
-          <button
-            className="delete-button"
+          <div
+            className="buttons-container"
           >
-            Delete
-          </button>,
-          <button
-            className="edit-button"
-            onClick={[Function]}
-          >
-            Edit
-          </button>,
+            <button
+              className="edit-button buttons"
+              onClick={[Function]}
+            >
+              Edit
+            </button>
+            <button
+              className="delete-button buttons"
+            >
+              Delete
+            </button>
+          </div>,
         ],
         "className": "ThoughtCard",
       },
@@ -162,27 +196,53 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Delete",
-            "className": "delete-button",
-            "id": undefined,
-            "onClick": undefined,
+            "children": Array [
+              <button
+                className="edit-button buttons"
+                onClick={[Function]}
+              >
+                Edit
+              </button>,
+              <button
+                className="delete-button buttons"
+              >
+                Delete
+              </button>,
+            ],
+            "className": "buttons-container",
           },
           "ref": null,
-          "rendered": "Delete",
-          "type": "button",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Edit",
-            "className": "edit-button",
-            "onClick": [Function],
-          },
-          "ref": null,
-          "rendered": "Edit",
-          "type": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Edit",
+                "className": "edit-button buttons",
+                "id": undefined,
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Edit",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Delete",
+                "className": "delete-button buttons",
+                "id": undefined,
+                "onClick": undefined,
+              },
+              "ref": null,
+              "rendered": "Delete",
+              "type": "button",
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",

@@ -95,9 +95,10 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
           "deleteThought": undefined,
+          "editThought": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -106,9 +107,10 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
           "deleteThought": undefined,
+          "editThought": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -134,9 +136,10 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
             "deleteThought": undefined,
+            "editThought": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -145,9 +148,10 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
             "deleteThought": undefined,
+            "editThought": undefined,
           },
           "ref": null,
           "rendered": null,

@@ -19,23 +19,27 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <input
+          className="title-input inputs"
           name="title"
           onChange={[Function]}
-          placeholder="Thought Title"
+          placeholder="Idea"
           value=""
         />,
         <input
+          className="body-input inputs"
           name="body"
           onChange={[Function]}
-          placeholder="Thought Body"
+          placeholder="Description"
           value=""
         />,
         <button
+          className="create-thought-button buttons"
           onClick={[Function]}
         >
-          Create Thought
+          CREATE THOUGHT
         </button>,
       ],
+      "className": "CreateThought",
     },
     "ref": null,
     "rendered": Array [
@@ -44,9 +48,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "className": "title-input inputs",
           "name": "title",
           "onChange": [Function],
-          "placeholder": "Thought Title",
+          "placeholder": "Idea",
           "value": "",
         },
         "ref": null,
@@ -58,9 +63,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "className": "body-input inputs",
           "name": "body",
           "onChange": [Function],
-          "placeholder": "Thought Body",
+          "placeholder": "Description",
           "value": "",
         },
         "ref": null,
@@ -72,11 +78,12 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Create Thought",
+          "children": "CREATE THOUGHT",
+          "className": "create-thought-button buttons",
           "onClick": [Function],
         },
         "ref": null,
-        "rendered": "Create Thought",
+        "rendered": "CREATE THOUGHT",
         "type": "button",
       },
     ],
@@ -90,23 +97,27 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <input
+            className="title-input inputs"
             name="title"
             onChange={[Function]}
-            placeholder="Thought Title"
+            placeholder="Idea"
             value=""
           />,
           <input
+            className="body-input inputs"
             name="body"
             onChange={[Function]}
-            placeholder="Thought Body"
+            placeholder="Description"
             value=""
           />,
           <button
+            className="create-thought-button buttons"
             onClick={[Function]}
           >
-            Create Thought
+            CREATE THOUGHT
           </button>,
         ],
+        "className": "CreateThought",
       },
       "ref": null,
       "rendered": Array [
@@ -115,9 +126,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "className": "title-input inputs",
             "name": "title",
             "onChange": [Function],
-            "placeholder": "Thought Title",
+            "placeholder": "Idea",
             "value": "",
           },
           "ref": null,
@@ -129,9 +141,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "className": "body-input inputs",
             "name": "body",
             "onChange": [Function],
-            "placeholder": "Thought Body",
+            "placeholder": "Description",
             "value": "",
           },
           "ref": null,
@@ -143,11 +156,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Create Thought",
+            "children": "CREATE THOUGHT",
+            "className": "create-thought-button buttons",
             "onClick": [Function],
           },
           "ref": null,
-          "rendered": "Create Thought",
+          "rendered": "CREATE THOUGHT",
           "type": "button",
         },
       ],

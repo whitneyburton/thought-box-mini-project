@@ -11,7 +11,6 @@ class ThoughtCard extends Component {
   }
 
   editThought = () => {
-    debugger
     let { contenteditable, editOrSave } = this.state;
     contenteditable = !contenteditable;
     if (editOrSave === 'Edit') {
