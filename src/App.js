@@ -31,7 +31,6 @@ class App extends Component {
       id: id
     }
     const allThoughts = [...this.state.thoughts];
-    console.log(allThoughts)
     const foundIndex = allThoughts.findIndex((thought) => {
       return thought.id === id
     });

@@ -22,11 +22,9 @@ ShallowWrapper {
       "children": Array [
         <h3
           className="title"
-          contentEditable={false}
         />,
         <p
           className="body"
-          contentEditable={false}
         />,
         <div
           className="buttons-container"
@@ -35,12 +33,12 @@ ShallowWrapper {
             className="edit-button buttons"
             onClick={[Function]}
           >
-            Edit
+            EDIT
           </button>
           <button
             className="delete-button buttons"
           >
-            Delete
+            DELETE
           </button>
         </div>,
       ],
@@ -55,7 +53,6 @@ ShallowWrapper {
         "props": Object {
           "children": undefined,
           "className": "title",
-          "contentEditable": false,
         },
         "ref": null,
         "rendered": null,
@@ -68,7 +65,6 @@ ShallowWrapper {
         "props": Object {
           "children": undefined,
           "className": "body",
-          "contentEditable": false,
         },
         "ref": null,
         "rendered": null,
@@ -84,12 +80,12 @@ ShallowWrapper {
               className="edit-button buttons"
               onClick={[Function]}
             >
-              Edit
+              EDIT
             </button>,
             <button
               className="delete-button buttons"
             >
-              Delete
+              DELETE
             </button>,
           ],
           "className": "buttons-container",
@@ -101,13 +97,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Edit",
+              "children": "EDIT",
               "className": "edit-button buttons",
-              "id": undefined,
               "onClick": [Function],
             },
             "ref": null,
-            "rendered": "Edit",
+            "rendered": "EDIT",
             "type": "button",
           },
           Object {
@@ -115,13 +110,13 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Delete",
+              "children": "DELETE",
               "className": "delete-button buttons",
               "id": undefined,
               "onClick": undefined,
             },
             "ref": null,
-            "rendered": "Delete",
+            "rendered": "DELETE",
             "type": "button",
           },
         ],
@@ -139,11 +134,9 @@ ShallowWrapper {
         "children": Array [
           <h3
             className="title"
-            contentEditable={false}
           />,
           <p
             className="body"
-            contentEditable={false}
           />,
           <div
             className="buttons-container"
@@ -152,12 +145,12 @@ ShallowWrapper {
               className="edit-button buttons"
               onClick={[Function]}
             >
-              Edit
+              EDIT
             </button>
             <button
               className="delete-button buttons"
             >
-              Delete
+              DELETE
             </button>
           </div>,
         ],
@@ -172,7 +165,6 @@ ShallowWrapper {
           "props": Object {
             "children": undefined,
             "className": "title",
-            "contentEditable": false,
           },
           "ref": null,
           "rendered": null,
@@ -185,7 +177,6 @@ ShallowWrapper {
           "props": Object {
             "children": undefined,
             "className": "body",
-            "contentEditable": false,
           },
           "ref": null,
           "rendered": null,
@@ -201,12 +192,12 @@ ShallowWrapper {
                 className="edit-button buttons"
                 onClick={[Function]}
               >
-                Edit
+                EDIT
               </button>,
               <button
                 className="delete-button buttons"
               >
-                Delete
+                DELETE
               </button>,
             ],
             "className": "buttons-container",
@@ -218,13 +209,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Edit",
+                "children": "EDIT",
                 "className": "edit-button buttons",
-                "id": undefined,
                 "onClick": [Function],
               },
               "ref": null,
-              "rendered": "Edit",
+              "rendered": "EDIT",
               "type": "button",
             },
             Object {
@@ -232,13 +222,13 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Delete",
+                "children": "DELETE",
                 "className": "delete-button buttons",
                 "id": undefined,
                 "onClick": undefined,
               },
               "ref": null,
-              "rendered": "Delete",
+              "rendered": "DELETE",
               "type": "button",
             },
           ],

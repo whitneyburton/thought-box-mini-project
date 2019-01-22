@@ -12,8 +12,9 @@ describe('ThoughtCard', () => {
 
   it('should start with the appropriate default state', () => {
     const wrapper = shallow(<ThoughtCard />);
-    expect(wrapper.state('contenteditable')).toEqual(false);
-    expect(wrapper.state('editOrSave')).toEqual('Edit');
+    expect(wrapper.state('editable')).toEqual(false);
+    expect(wrapper.state('title')).toEqual('');
+    expect(wrapper.state('body')).toEqual('');
   })
 
   it('should delete a thought when the delete button is clicked', () => {
@@ -24,13 +25,33 @@ describe('ThoughtCard', () => {
     expect(mockDeleteClick).toHaveBeenCalled();
   });
 
-  it('should toggle contenteditable when edit button is clicked', () => {
+  it('should turn the editable property boolean to true when the edit button is clicked', () => {
     const wrapper = shallow(<ThoughtCard />);
-    expect(wrapper.state('contenteditable')).toEqual(false);
-    expect(wrapper.state('editOrSave')).toEqual('Edit');
+    expect(wrapper.state('editable')).toEqual(false);
     wrapper.find('.edit-button').simulate('click');
-    expect(wrapper.state('contenteditable')).toEqual(true);
-    expect(wrapper.state('editOrSave')).toEqual('Save');
+    expect(wrapper.state('editable')).toEqual(true);
+  });
+
+  it('should turn the editable property boolean to false when the save button is clicked', () => {
+    const wrapper = shallow(<ThoughtCard />);
+    wrapper.setState({ editable: true });
+    wrapper.find('.edit-button').simulate('click');
+    expect(wrapper.state('editable')).toEqual(false);
+  });
+
+  it('should update the state properties title and body onChange of edit inputs', () => {
+    const wrapper = shallow(<ThoughtCard />);
+    const expectedState = {
+      title: '',
+      body: '',
+      editable: false,
+    };
+
+    expect(wrapper.state()).toEqual(expectedState);
+    wrapper.find('.edit-button').simulate('click');
+    expect(wrapper.state('editable')).toEqual(true);
+    wrapper.instance().updateInfo({target: {name: 'title', value: 'new idea'}});
+    expect(wrapper.state('title')).toEqual('new idea');
   });
 
 });

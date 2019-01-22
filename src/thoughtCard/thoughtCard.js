@@ -11,7 +11,7 @@ export class ThoughtCard extends Component {
     }
   }
 
-  toggleEdit = () => {
+  enableEditing = () => {
     this.setState({
       editable: !this.state.editable,
     });
@@ -27,22 +27,23 @@ export class ThoughtCard extends Component {
   }
 
   updateInfo = (event) => {
+    console.log(event.target.value)
     let { name, value } = event.target;
     this.setState({
       [name]: value
     })
   }
 
-
   render() {
     let { title, body, id, deleteThought } = this.props;
+    let { enableEditing, handleEdit, updateInfo } = this;
     if (!this.state.editable) {
       return (
         <div key={id} className='ThoughtCard'>
           <h3 className='title'>{title}</h3>
           <p className='body'>{body}</p>
           <div className='buttons-container'>
-            <button className='edit-button buttons' onClick={this.toggleEdit}>EDIT</button>
+            <button className='edit-button buttons' onClick={enableEditing}>EDIT</button>
             <button id={id} className='delete-button buttons' onClick={deleteThought}>DELETE</button>
           </div>
         </div>
@@ -50,10 +51,10 @@ export class ThoughtCard extends Component {
     } else {
       return (
         <div key={id} className='ThoughtCard'>
-          <input className='title-edit-input' name='title' placeholder={title} onChange={this.updateInfo}></input>
-          <input className='body-edit-input' name='body' placeholder={body} onChange={this.updateInfo}></input>
+          <input className='title-edit-input' name='title' placeholder={title} onChange={updateInfo}></input>
+          <input className='body-edit-input' name='body' placeholder={body} onChange={updateInfo}></input>
           <div className='buttons-container'>
-            <button className='edit-button buttons' onClick={() => this.handleEdit(this.state.title, this.state.body, id)}>SAVE</button>
+            <button className='edit-button buttons' onClick={() => handleEdit(this.state.title, this.state.body, id)}>SAVE</button>
             <button id={id} className='delete-button buttons' onClick={deleteThought}>DELETE</button>
           </div>
         </div>
