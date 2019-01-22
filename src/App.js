@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
 import './App.css';
-import CreateThought from './createThought/createThought';
+import { CreateThought } from './createThought/createThought';
 import { ThoughtList } from './thoughtList/thoughtList';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      thoughts: []
+      thoughts: [],
     };
   }
 
   createThought = (thought) => {
     const { thoughts } = this.state;
-    const newThought = { ...thought, id: Date.now() };
-    this.setState({ thoughts: [...thoughts, newThought] });
+    const newThought = { ...thought, id: Date.now() }
+    this.setState({
+      thoughts: [...thoughts, newThought]
+    });
   }
 
   deleteThought = (event) => {

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import './createThought.css';
 
-
-class CreateThought extends Component {
+export class CreateThought extends Component {
   constructor() {
     super();
     this.state = {
       title: '',
-      body: ''
+      body: '',
     }
   }
 
@@ -23,8 +22,10 @@ class CreateThought extends Component {
   }
 
   render() {
-    return(
-      <form className='CreateThought'>
+    return (
+      <form
+        onSubmit={() => this.handleSubmit}
+        className='CreateThought'>
         <input
           name='title'
           className='title-input inputs'
@@ -44,5 +45,3 @@ class CreateThought extends Component {
     );
   }
 }
-
-export default CreateThought;

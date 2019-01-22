@@ -62,5 +62,3 @@ export class ThoughtCard extends Component {
     }
   }
 }
-
-export default ThoughtCard;
